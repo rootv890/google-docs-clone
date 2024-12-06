@@ -17,8 +17,22 @@ export default {
           DEFAULT: 'var(--card)',
           foreground: 'var(--card-foreground)'
         },
+        active: {
+          DEFAULT: "var(--active)",
+          foreground: "var(--active-foreground)",
+        },
+        document: {
+          background: "var(--document-background)",
+          foreground: "var(--document-foreground)",
+        },
+        toolbar: {
+          background: "var(--toolbar-background)",
+          active: "var(--toolbar-active)",
+          foreground: "var(--toolbar-foreground)",
+          hover: "var(--toolbar-hover)",
+        },
         popover: {
-          DEFAULT: 'var(--popover)',
+          DEFAULT: "var(--popover)",
           foreground: 'var(--popover-foreground)'
         },
         primary: {

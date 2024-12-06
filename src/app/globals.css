@@ -8,9 +8,22 @@ body {
 
 @layer base {
   :root {
-    --background: hsl(0, 0%, 100%); /* Neutral white for light mode */
+    --background: #f9fbfd; /* Neutral white for light mode */
     --foreground: hsl(0, 0%, 0%); /* Neutral black for light mode */
     --card: hsl(0, 0%, 100%);
+
+    /* document */
+    --document-background: white;
+    --document-foreground: black;
+
+    /* toolbar */
+    --toolbar-background: #f0f4f9;
+    --toolbar-active: #d3e2fd;
+    --toolbar-foreground: #191717;
+    --toolbar-hover: rgba(0, 0, 0, 0.05);
+
+    --active: hsl(0, 0%, 36%);
+    --active-foreground: hsl(0, 0%, 100%);
     --card-foreground: hsl(0, 0%, 0%);
     --popover: hsl(0, 0%, 100%);
     --popover-foreground: hsl(0, 0%, 0%);
@@ -46,6 +59,8 @@ body {
     --background: hsl(222, 28%, 13%); /* Neutral black for dark mode */
     --foreground: hsl(0, 0%, 100%); /* White for text in dark mode */
     --card: hsl(222, 28%, 16%); /* Slightly lighter black for cards */
+    --active: hsl(0, 0%, 36%);
+    --active-foreground: hsl(0, 0%, 100%);
     --card-foreground: hsl(0, 0%, 100%);
     --popover: hsl(222, 28%, 16%);
     --popover-foreground: hsl(0, 0%, 100%);
