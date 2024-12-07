@@ -125,6 +125,27 @@ body {
     --title-font-family: "Helvetica", sans-serif;
   }
 
+  /* Code and preformatted text styles */
+  code {
+    background-color: var(--purple-light);
+    border-radius: 0.4rem;
+    color: var(--black);
+    font-size: 0.85rem;
+    padding: 0.25em 0.3em;
+  }
+
+  /* Link styles */
+  a {
+    color: var(--accent);
+    cursor: pointer;
+
+    &:hover {
+      color: #3b08d5;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+  }
+
   /* Image styling */
   img {
     display: block;

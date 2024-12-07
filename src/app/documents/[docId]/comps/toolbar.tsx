@@ -3,7 +3,6 @@ import {
   BoldIcon,
   Italic,
   ListTodoIcon,
-  LucideBold,
   LucideIcon,
   MessageCircleIcon,
   PrinterIcon,
@@ -23,6 +22,8 @@ import FontFamilyButton from "./font-family-button";
 import TextStyleButtoon from "./heading-level-button";
 import TextColorButton from "./text-color-button";
 import HighlightColorButton from "./highlight-color-button";
+import LinkButton from "./link-button";
+import ImageButton from "./image-button";
 
 const Toolbar = () => {
   const { editor } = useEditorStore();
@@ -153,6 +154,9 @@ const Toolbar = () => {
       {toolSections[1].map((tool) => (
         <ToolbarButton key={tool.label} {...tool} />
       ))}
+      <Separator />
+      <LinkButton />
+      <ImageButton />
     </div>
   );
 };

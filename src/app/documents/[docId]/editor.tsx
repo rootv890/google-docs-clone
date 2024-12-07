@@ -20,6 +20,8 @@ import FontFamily from "@tiptap/extension-font-family";
 import Heading from "@tiptap/extension-heading";
 import Color from "@tiptap/extension-color";
 import Highlight from "@tiptap/extension-highlight";
+import Link from "@tiptap/extension-link";
+
 // import Dropcursor from "@tiptap/extension-dropcursor";
 import Image from "@tiptap/extension-image";
 import { useEditorStore } from "@/store/use-editor-store";
@@ -78,6 +80,14 @@ const Editor = ({ docId }: { docId: string }) => {
       Heading,
       Color,
       Highlight.configure({ multicolor: true }),
+      Link.configure({
+        openOnClick: true,
+        autolink: true,
+        defaultProtocol: "https",
+        // HTMLAttributes: {
+        //   target: "_blank",
+        // },
+      }),
     ],
     content: /* html */ `
 
