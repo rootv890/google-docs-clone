@@ -15,6 +15,9 @@ import TableHeader from "@tiptap/extension-table-header";
 import TableRow from "@tiptap/extension-table-row";
 import ResizeImage from "tiptap-extension-resize-image";
 import Underline from "@tiptap/extension-underline";
+import TextStyle from "@tiptap/extension-text-style";
+import FontFamily from "@tiptap/extension-font-family";
+import Heading from "@tiptap/extension-heading";
 // import Dropcursor from "@tiptap/extension-dropcursor";
 import Image from "@tiptap/extension-image";
 import { useEditorStore } from "@/store/use-editor-store";
@@ -68,11 +71,17 @@ const Editor = ({ docId }: { docId: string }) => {
       Image,
       ResizeImage,
       Underline,
+      TextStyle,
+      FontFamily,
+      Heading,
     ],
     content: /* html */ `
 
-      <p>${docId}</p>
-      <img src="https://placehold.co/800x400/6A00F5/white" />
+      ${docId}
+      <p>hello</p>
+      <p>world</p>
+      <p>test</p>
+
 
 
       `,

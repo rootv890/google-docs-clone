@@ -116,10 +116,13 @@ body {
   }
 } */
 
-/* Basic editor styles */
+/* here Basic editor styles */
 .tiptap {
   :first-child {
     margin-top: 0;
+  }
+  html {
+    --title-font-family: "Helvetica", sans-serif;
   }
 
   /* Image styling */

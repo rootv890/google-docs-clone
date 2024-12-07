@@ -27,10 +27,7 @@ const ToolbarButton = ({
     >
       <span className="sr-only">{label}</span>
       <Icon
-        className={cn(
-          "!size-5 m-1 text-toolbar-foreground font-extrabold ",
-          isActive && ""
-        )}
+        className={cn("!size-5 m-1 text-toolbar-foreground font-extrabold ")}
       />
     </Button>
   );

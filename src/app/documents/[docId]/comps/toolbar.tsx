@@ -19,6 +19,8 @@ import ToolbarButton from "./toolbar-button";
 import { Bold } from "lucide-react";
 import { useEditorStore } from "@/store/use-editor-store";
 import { Separator } from "@/components/ui/separator";
+import FontFamilyButton from "./font-family-button";
+import TextStyleButtoon from "./heading-level-button";
 
 const Toolbar = () => {
   const { editor } = useEditorStore();
@@ -138,6 +140,8 @@ const Toolbar = () => {
         <ToolbarButton key={tool.label} {...tool} />
       ))}
 
+      <FontFamilyButton />
+      <TextStyleButtoon />
       <Separator />
 
       {/* Formatting */}
