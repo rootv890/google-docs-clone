@@ -20,7 +20,7 @@ const ToolbarButton = ({
   return (
     <Button
       className={cn(
-        "text-sm h-7 min-w-7 aspect-square flex items-center  justify-center rounded-md p-4 bg-transparen shadow-none  hover:bg-toolbar-hover ",
+        "text-sm h-7 min-w-7 aspect-square flex items-center  justify-center rounded-md p-4 bg-transparent shadow-none  hover:bg-toolbar-hover ",
         isActive && "bg-toolbar-active text-toolbar-foreground"
       )}
       onClick={onClick}

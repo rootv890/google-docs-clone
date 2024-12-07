@@ -305,6 +305,12 @@ body {
   }
 }
 
+@layer components {
+  .toolbar-button {
+    @apply text-sm h-7 min-w-7 aspect-square flex items-center  justify-center rounded-md p-4 bg-transparent shadow-none  hover:bg-toolbar-hover;
+  }
+}
+
 /* role menu disable border color */
 .react-color-picker__swatch {
   border-color: transparent !important;

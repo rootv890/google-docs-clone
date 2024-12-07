@@ -21,6 +21,7 @@ import Heading from "@tiptap/extension-heading";
 import Color from "@tiptap/extension-color";
 import Highlight from "@tiptap/extension-highlight";
 import Link from "@tiptap/extension-link";
+import TextAlign from "@tiptap/extension-text-align";
 
 // import Dropcursor from "@tiptap/extension-dropcursor";
 import Image from "@tiptap/extension-image";
@@ -84,9 +85,10 @@ const Editor = ({ docId }: { docId: string }) => {
         openOnClick: true,
         autolink: true,
         defaultProtocol: "https",
-        // HTMLAttributes: {
-        //   target: "_blank",
-        // },
+      }),
+      TextAlign.configure({
+        types: ["heading", "paragraph", "list"],
+        alignments: ["left", "center", "right", "justify"],
       }),
     ],
     content: /* html */ `

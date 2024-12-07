@@ -24,6 +24,7 @@ import TextColorButton from "./text-color-button";
 import HighlightColorButton from "./highlight-color-button";
 import LinkButton from "./link-button";
 import ImageButton from "./image-button";
+import AlignButton from "./align-button";
 
 const Toolbar = () => {
   const { editor } = useEditorStore();
@@ -142,14 +143,11 @@ const Toolbar = () => {
       {toolSections[0].map((tool) => (
         <ToolbarButton key={tool.label} {...tool} />
       ))}
-
       <FontFamilyButton />
       <TextStyleButtoon />
       <TextColorButton />
       <HighlightColorButton />
-
       <Separator />
-
       {/* Formatting */}
       {toolSections[1].map((tool) => (
         <ToolbarButton key={tool.label} {...tool} />
@@ -157,6 +155,8 @@ const Toolbar = () => {
       <Separator />
       <LinkButton />
       <ImageButton />
+
+      <AlignButton />
     </div>
   );
 };

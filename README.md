@@ -8,3 +8,4 @@
 | Highlight Color | Highlight Color Selector            | 2024-12-07 |
 | Image Button    | Image Button                        | 2024-12-07 |
 | Link Button     | Link Button                         | 2024-12-07 |
+| Align Button    | Align Button                        | 2024-12-07 |
