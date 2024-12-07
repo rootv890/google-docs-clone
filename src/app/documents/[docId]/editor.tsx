@@ -18,6 +18,8 @@ import Underline from "@tiptap/extension-underline";
 import TextStyle from "@tiptap/extension-text-style";
 import FontFamily from "@tiptap/extension-font-family";
 import Heading from "@tiptap/extension-heading";
+import Color from "@tiptap/extension-color";
+import Highlight from "@tiptap/extension-highlight";
 // import Dropcursor from "@tiptap/extension-dropcursor";
 import Image from "@tiptap/extension-image";
 import { useEditorStore } from "@/store/use-editor-store";
@@ -74,6 +76,8 @@ const Editor = ({ docId }: { docId: string }) => {
       TextStyle,
       FontFamily,
       Heading,
+      Color,
+      Highlight.configure({ multicolor: true }),
     ],
     content: /* html */ `
 

@@ -21,6 +21,8 @@ import { useEditorStore } from "@/store/use-editor-store";
 import { Separator } from "@/components/ui/separator";
 import FontFamilyButton from "./font-family-button";
 import TextStyleButtoon from "./heading-level-button";
+import TextColorButton from "./text-color-button";
+import HighlightColorButton from "./highlight-color-button";
 
 const Toolbar = () => {
   const { editor } = useEditorStore();
@@ -142,6 +144,9 @@ const Toolbar = () => {
 
       <FontFamilyButton />
       <TextStyleButtoon />
+      <TextColorButton />
+      <HighlightColorButton />
+
       <Separator />
 
       {/* Formatting */}
