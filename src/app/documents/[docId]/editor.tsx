@@ -30,6 +30,7 @@ import { useCallback } from "react";
 import { debounce } from "lodash";
 import { FontSize } from "@/extensions/FontSize";
 import { LineHeight } from "@/extensions/LineHeight";
+import Ruler from "./comps/Ruler";
 
 const Editor = ({ docId }: { docId: string }) => {
   const { setEditor } = useEditorStore();
@@ -37,14 +38,13 @@ const Editor = ({ docId }: { docId: string }) => {
   /* Handle editor update */
   const handleEditorUpdate = useCallback(
     ({ editor }: { editor: EditorType }) => {
-      // calculate seconds since last update
-      console.log("Updated!");
       setEditor(editor);
     },
     [setEditor]
   );
 
   const editor = useEditor({
+    immediatelyRender: false,
     onCreate: handleEditorUpdate,
     onDestroy: () => {
       setEditor(null);
@@ -111,6 +111,7 @@ const Editor = ({ docId }: { docId: string }) => {
   });
   return (
     <section className="size-full bg-background print:bg-white print:border-none px-4 print:p-0 overflow-x-auto print:overflow-visible">
+      <Ruler />
       <div className="min-w-max bg-inherit  w-[800px] py-4 print:py-0 print:w-full mx-auto flex flex-col items-center justify-center print:min-w-0">
         <EditorContent editor={editor} />
       </div>

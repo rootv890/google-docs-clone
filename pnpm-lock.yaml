@@ -161,9 +161,6 @@ importers:
       react-hook-form:
         specifier: ^7.53.2
         version: 7.53.2(react@19.0.0)
-      react-icons:
-        specifier: ^5.4.0
-        version: 5.4.0(react@19.0.0)
       react-resizable-panels:
         specifier: ^2.1.7
         version: 2.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -246,6 +243,9 @@ importers:
       react-color:
         specifier: ^2.19.3
         version: 2.19.3(react@19.0.0)
+      react-icons:
+        specifier: ^5.4.0
+        version: 5.4.0(react@19.0.0)
       tailwindcss:
         specifier: ^3.4.1
         version: 3.4.16

@@ -11,3 +11,4 @@
 | Align Button    | Align Button                        | 2024-12-07 |
 | Font Size       | Font Size Selector                  | 2024-12-08 |
 | Line Height     | Line Height Selector                | 2024-12-08 |
+| Ruler           | Ruler (BUGGY)                       | 2024-12-08 |
