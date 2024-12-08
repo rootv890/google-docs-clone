@@ -25,6 +25,8 @@ import HighlightColorButton from "./highlight-color-button";
 import LinkButton from "./link-button";
 import ImageButton from "./image-button";
 import AlignButton from "./align-button";
+import ListButton from "./list-button";
+import FontSizeButton from "./font-size-button";
 
 const Toolbar = () => {
   const { editor } = useEditorStore();
@@ -136,7 +138,7 @@ const Toolbar = () => {
 
   return (
     <div
-      className="flex items-center  min-h-10 overflow-x-auto p-3 py-0.5 rounded-full bg-toolbar-background w-full  gap-4
+      className="flex items-center  min-h-10 overflow-x-auto p-3  lg:py-1 lg:rounded-full bg-toolbar-background w-full flex-wrap overflow-y-hidden  gap-4 md:rounded-lg
     "
     >
       {/* Actions */}
@@ -145,6 +147,7 @@ const Toolbar = () => {
       ))}
       <FontFamilyButton />
       <TextStyleButtoon />
+      <FontSizeButton />
       <TextColorButton />
       <HighlightColorButton />
       <Separator />
@@ -157,6 +160,7 @@ const Toolbar = () => {
       <ImageButton />
 
       <AlignButton />
+      <ListButton />
     </div>
   );
 };

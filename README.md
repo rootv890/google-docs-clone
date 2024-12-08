@@ -9,3 +9,4 @@
 | Image Button    | Image Button                        | 2024-12-07 |
 | Link Button     | Link Button                         | 2024-12-07 |
 | Align Button    | Align Button                        | 2024-12-07 |
+| Font Size       | Font Size Selector                  | 2024-12-08 |

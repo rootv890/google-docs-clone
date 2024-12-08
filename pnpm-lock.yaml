@@ -189,6 +189,9 @@ importers:
         specifier: ^5.0.2
         version: 5.0.2(@types/react@19.0.0)(react@19.0.0)(use-sync-external-store@1.4.0(react@19.0.0))
     devDependencies:
+      '@tiptap/core':
+        specifier: ^2.10.3
+        version: 2.10.3(@tiptap/pm@2.10.3)
       '@tiptap/extension-color':
         specifier: ^2.10.3
         version: 2.10.3(@tiptap/core@2.10.3(@tiptap/pm@2.10.3))(@tiptap/extension-text-style@2.10.3(@tiptap/core@2.10.3(@tiptap/pm@2.10.3)))

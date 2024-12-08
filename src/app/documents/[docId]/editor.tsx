@@ -28,6 +28,7 @@ import Image from "@tiptap/extension-image";
 import { useEditorStore } from "@/store/use-editor-store";
 import { useCallback } from "react";
 import { debounce } from "lodash";
+import { FontSize } from "@/extensions/FontSize";
 
 const Editor = ({ docId }: { docId: string }) => {
   const { setEditor } = useEditorStore();
@@ -90,6 +91,7 @@ const Editor = ({ docId }: { docId: string }) => {
         types: ["heading", "paragraph", "list"],
         alignments: ["left", "center", "right", "justify"],
       }),
+      FontSize,
     ],
     content: /* html */ `
 

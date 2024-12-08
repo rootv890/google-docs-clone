@@ -20,7 +20,11 @@ body {
     --toolbar-background: #f0f4f9;
     --toolbar-active: #d3e2fd;
     --toolbar-foreground: #191717;
-    --toolbar-hover: rgba(0, 0, 0, 0.05);
+    --toolbar-hover: #aec2db;
+
+    /* code */
+    --code-background: #f0f4f9;
+    --code-foreground: #191717;
 
     --active: hsl(0, 0%, 36%);
     --active-foreground: hsl(0, 0%, 100%);
@@ -125,11 +129,83 @@ body {
     --title-font-family: "Helvetica", sans-serif;
   }
 
+  /* List styles */
+  ul,
+  ol {
+    padding: 0 1rem;
+    margin: 1.25rem 1rem 1.25rem 0.4rem;
+  }
+
+  /* Add these specific styles for bullet lists */
+  ul:not([data-type="taskList"]) {
+    list-style-type: disc;
+
+    /* Style nested lists */
+    ul {
+      list-style-type: circle;
+
+      ul {
+        list-style-type: square;
+      }
+    }
+  }
+
+  /* Add these specific styles for ordered lists */
+  ol {
+    list-style-type: decimal;
+
+    /* Style nested ordered lists */
+    ol {
+      list-style-type: lower-alpha;
+
+      ol {
+        list-style-type: lower-roman;
+      }
+    }
+  }
+
+  /* Keep task list styles separate */
+  ul[data-type="taskList"] {
+    list-style: none;
+
+    li {
+      align-items: flex-start;
+      display: flex;
+
+      > label {
+        flex: 0 0 auto;
+        margin-right: 0.5rem;
+        user-select: none;
+      }
+
+      > div {
+        flex: 1 1 auto;
+      }
+    }
+
+    input[type="checkbox"] {
+      cursor: pointer;
+    }
+
+    ul[data-type="taskList"] {
+      margin: 0;
+    }
+  }
+
+  /* Ensure list items and their paragraphs are properly spaced */
+  li {
+    margin: 0.2em 0;
+
+    p {
+      margin: 0.25em 0;
+    }
+  }
+
   /* Code and preformatted text styles */
   code {
-    background-color: var(--purple-light);
+    background-color: var(--code-background);
     border-radius: 0.4rem;
-    color: var(--black);
+    color: var(--code-foreground);
     font-size: 0.85rem;
     padding: 0.25em 0.3em;
   }
@@ -251,57 +327,9 @@ body {
     font-size: 1rem;
   }
 
-  /* Task list specific styles */
-  ul[data-type="taskList"] {
-    list-style: none;
-    margin-left: 0;
-    padding: 0;
-
-    li {
-      align-items: flex-start;
-      display: flex;
-
-      > label {
-        flex: 0 0 auto;
-        margin-right: 0.5rem;
-        user-select: none;
-      }
-
-      > div {
-        flex: 1 1 auto;
-      }
-    }
-
-    input[type="checkbox"] {
-      cursor: pointer;
-    }
-
-    ul[data-type="taskList"] {
-      margin: 0;
-    }
-  }
-
-  /* List styles */
-  ul,
-  ol {
-    padding: 0 1rem;
-    margin: 1.25rem 1rem 1.25rem 0.4rem;
-
-    ul li {
-      list-style: disc;
-      p {
-        margin-top: 0.25em;
-        margin-bottom: 0.25em;
-      }
-    }
-
-    ol li {
-      list-style: decimal;
-      p {
-        margin-top: 0.25em;
-        margin-bottom: 0.25em;
-      }
-    }
+  /* Add these font size styles */
+  [style*="font-size"] {
+    line-height: 1.4;
   }
 }
 
