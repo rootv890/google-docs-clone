@@ -29,6 +29,7 @@ import { useEditorStore } from "@/store/use-editor-store";
 import { useCallback } from "react";
 import { debounce } from "lodash";
 import { FontSize } from "@/extensions/FontSize";
+import { LineHeight } from "@/extensions/LineHeight";
 
 const Editor = ({ docId }: { docId: string }) => {
   const { setEditor } = useEditorStore();
@@ -92,6 +93,10 @@ const Editor = ({ docId }: { docId: string }) => {
         alignments: ["left", "center", "right", "justify"],
       }),
       FontSize,
+      LineHeight.configure({
+        types: ["heading", "paragraph"],
+        defaultLineHeight: "normal",
+      }),
     ],
     content: /* html */ `
 

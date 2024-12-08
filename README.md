@@ -10,3 +10,4 @@
 | Link Button     | Link Button                         | 2024-12-07 |
 | Align Button    | Align Button                        | 2024-12-07 |
 | Font Size       | Font Size Selector                  | 2024-12-08 |
+| Line Height     | Line Height Selector                | 2024-12-08 |

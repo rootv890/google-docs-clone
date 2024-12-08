@@ -27,6 +27,7 @@ import ImageButton from "./image-button";
 import AlignButton from "./align-button";
 import ListButton from "./list-button";
 import FontSizeButton from "./font-size-button";
+import LineHeightButton from "./line-height-button";
 
 const Toolbar = () => {
   const { editor } = useEditorStore();
@@ -155,6 +156,7 @@ const Toolbar = () => {
       {toolSections[1].map((tool) => (
         <ToolbarButton key={tool.label} {...tool} />
       ))}
+      <LineHeightButton />
       <Separator />
       <LinkButton />
       <ImageButton />
